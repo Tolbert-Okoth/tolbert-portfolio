@@ -9,7 +9,7 @@
 
 This is a modern, responsive personal portfolio website built to showcase my work as a **Full Stack Developer** and **Mathematics & Computer Science** student. It features a clean, professional design focused on readability and performance, highlighting complex system architecture projects and verified certifications.
 
-**Live Demo:** [Insert Your Vercel Link Here] (e.g., https://tolbert-portfolio.vercel.app)
+
 
 ---
 
