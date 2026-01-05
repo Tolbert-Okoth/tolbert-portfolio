@@ -1,7 +1,9 @@
 # Tolbert Okoth Asumba - Full Stack Portfolio
 
-![Portfolio Preview](public/preview-image.png)
-*(Note: You can add a screenshot of your site here later)*
+![Portfolio Preview]
+<img width="940" height="479" alt="image" src="https://github.com/user-attachments/assets/7786b1cd-106b-4e0f-92ae-73601b01c37a" />
+
+
 
 ## 🚀 Overview
 
