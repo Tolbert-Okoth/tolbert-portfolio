@@ -2,10 +2,14 @@ import React from 'react';
 import { Container, Row, Col, Badge } from 'react-bootstrap';
 import { PatchCheckFill, Award, BoxArrowUpRight } from 'react-bootstrap-icons';
 
-// Username confirmed from your screenshot
 const fccUsername = "tolbert"; 
 
 const certifications = [
+  { 
+    name: "Data Analysis with Python", 
+    date: "Jan 2026", 
+    link: `https://www.freecodecamp.org/certification/${fccUsername}/data-analysis-with-python-v7`
+  },
   { 
     name: "Scientific Computing with Python", 
     date: "Oct 2025",
@@ -39,7 +43,6 @@ const certifications = [
   { 
     name: "JavaScript Algorithms and Data Structures", 
     date: "Jun 2025", 
-    // UPDATED: Now includes the correct '-v8' version in the link
     link: `https://www.freecodecamp.org/certification/${fccUsername}/javascript-algorithms-and-data-structures-v8`
   },
   { 
@@ -83,7 +86,7 @@ const About = () => {
             <div className="p-3 bg-light rounded border-start border-4 border-warning">
               <h5 className="fw-bold d-flex align-items-center mb-3">
                 <PatchCheckFill className="me-2 text-warning" /> 
-                freeCodeCamp Certifications (8)
+                freeCodeCamp Certifications (9)
               </h5>
               <Row>
                 {certifications.map((cert, index) => (
