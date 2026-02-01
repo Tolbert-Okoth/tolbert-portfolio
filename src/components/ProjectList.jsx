@@ -5,6 +5,20 @@ import { Github, BoxArrowUpRight } from 'react-bootstrap-icons';
 const projects = [
   {
     id: 1,
+    title: "SautiYaAfya",
+    subtitle: "AI-Powered Pediatric Respiratory Triage",
+    description: "A defense-grade telemedicine platform developed for the Ministry of Health, Kenya. It assists CHWs in diagnosing pneumonia and asthma using AI audio analysis, functioning fully offline in remote areas.",
+    highlights: [
+      "Hybrid AI Engine (CNN + DSP + Groq LLM)",
+      "Real-time Spectrogram Visualization via WebAudio API",
+      "Offline-First Architecture with Auto-Sync"
+    ],
+    tech: ["React", "FastAPI", "PyTorch", "Firebase", "React-Leaflet", "Groq LLM"],
+    github: "https://github.com/Tolbert-Okoth/sauti-ya-afya",
+    demo: null
+  },
+  {
+    id: 2,
     title: "Afya-Pulse",
     subtitle: "AI-Driven Healthcare Triage Platform",
     description: "A real-time medical surveillance system designed for Kenya. It uses Llama-3 to analyze patient symptoms (including Sheng & Swahili) and categorize urgency for medical command centers.",
@@ -18,7 +32,7 @@ const projects = [
     demo: null 
   },
   {
-    id: 2,
+    id: 3,
     title: "Ghoul System",
     subtitle: "Autonomous Market Surveillance",
     description: "A 'Cyberpunk' tactical dashboard that scans financial news and technical data. It feeds real-time data into an LLM to generate trading signals autonomously.",
@@ -32,7 +46,7 @@ const projects = [
     demo: null
   },
   {
-    id: 3,
+    id: 4,
     title: "FarmConnect",
     subtitle: "Multi-Vendor Agri-Marketplace",
     description: "A full-stack e-commerce platform connecting farmers directly to buyers. Features a complete financial loop including a wallet system and mobile payments.",
@@ -58,7 +72,7 @@ const ProjectList = () => {
         
         <Row>
           {projects.map((project) => (
-            <Col key={project.id} lg={4} md={6} className="mb-4 d-flex align-items-stretch">
+            <Col key={project.id} lg={6} className="mb-4 d-flex align-items-stretch">
               <Card className="shadow-sm border-0 w-100 h-100 hover-shadow">
                 <Card.Body className="d-flex flex-column">
                   <div className="mb-3">
