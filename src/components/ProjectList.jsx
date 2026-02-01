@@ -7,11 +7,11 @@ const projects = [
     id: 1,
     title: "SautiYaAfya",
     subtitle: "AI-Powered Pediatric Respiratory Triage",
-    description: "A defense-grade telemedicine platform developed for the Ministry of Health, Kenya. It assists CHWs in diagnosing pneumonia and asthma using AI audio analysis, functioning fully offline in remote areas.",
+    description: "A defense-grade telemedicine platform developed for the Ministry of Health, Kenya. It assists CHWs in diagnosing pneumonia and asthma using AI audio analysis, functioning fully in remote areas.",
     highlights: [
       "Hybrid AI Engine (CNN + DSP + Groq LLM)",
       "Real-time Spectrogram Visualization via WebAudio API",
-      "Offline-First Architecture with Auto-Sync"
+      "Online-First Architecture with Auto-Sync"
     ],
     tech: ["React", "FastAPI", "PyTorch", "Firebase", "React-Leaflet", "Groq LLM"],
     github: "https://github.com/Tolbert-Okoth/sauti-ya-afya",
