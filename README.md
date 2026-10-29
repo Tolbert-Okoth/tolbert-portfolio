@@ -1,50 +1,42 @@
-# Tolbert Okoth Asumba - Full Stack Portfolio
+# OSUS — Tolbert Okoth Asumba
 
-![Portfolio Preview]
-<img width="940" height="479" alt="image" src="https://github.com/user-attachments/assets/7786b1cd-106b-4e0f-92ae-73601b01c37a" />
+A React/Vite portfolio focused on quantitative engineering and data systems. The visual identity follows the supplied OSUS brand: charcoal, warm cream, muted red, and editorial serif typography.
 
+## Development
 
+Requires Node.js 22.12+ (or Node.js 20.19+) and npm.
 
-## 🚀 Overview
+```sh
+npm ci
+npm run dev
+```
 
-This is a modern, responsive personal portfolio website built to showcase my work as a **Full Stack Developer** and **Mathematics & Computer Science** student. It features a clean, professional design focused on readability and performance, highlighting complex system architecture projects and verified certifications.
+## Validation and production
 
+```sh
+npm run lint
+npm run build
+npm run preview
+```
 
+Deploy `dist/` to a static host. Asset URLs assume deployment at the domain root. Set an absolute production `og:image` URL in `index.html` when the domain is known.
 
----
+## Content and structure
 
-## 🛠 Tech Stack
+- `src/data.js`: seven project case studies, four filter categories, experience, skills, and nine certification links.
+- `src/App.jsx`: page composition and filter/menu state.
+- `src/components/ProjectList.jsx`: categories, case studies, source links, evaluation notes, and disclosures.
+- `src/components/ProjectVisual.jsx`: explanatory schematics, without simulated performance metrics.
+- `src/components/ProjectList.css`: responsive project-specific styles.
+- `src/components/Experience.jsx`: independent research, engineering projects, and confirmed freelance work, labelled separately.
+- `src/App.css` and `src/index.css`: brand styling, responsive layout, focus states, and reduced-motion support.
+- `public/brand/osus.jpg`: supplied brand artwork.
+- `public/resume.pdf`: existing downloadable résumé; not rewritten during the portfolio repositioning.
 
-* **Framework:** React.js (Vite)
-* **Styling:** Bootstrap 5 & React-Bootstrap
-* **Icons:** React Bootstrap Icons
-* **Typography:** Inter (via Google Fonts)
-* **Deployment:** Vercel
+The three leading projects cover Hurst/DFA hypothesis testing, walk-forward data/evaluation tooling, and OSUS feature/model inference. Software projects remain supporting examples of APIs, persistence, and data delivery.
 
----
+Public-source buttons appear only for verified available repositories. Local OSUS and time-series research are labelled as local work and have engineering notes instead. Research results, model accuracy, runtime gains, and trading performance were not rerun or independently validated. Source-level limitations are stated in each case study. Client details and unprovided dates are omitted.
 
-## 🌟 Key Features
+## Accessibility and interactions
 
-* **Responsive Hero Section:** Immediate access to contact info and resume download.
-* **Project Showcase:** Detailed cards for complex full-stack applications (**Afya-Pulse**, **Ghoul System**, **FarmConnect**) highlighting specific tech stacks and architectural features.
-* **Verified Certifications:** An automated grid displaying 8+ freeCodeCamp certifications with direct verification links.
-* **Skills Matrix:** Categorized technical skills (Frontend, Backend, DevOps, Mathematical Logic).
-* **Clean Architecture:** Component-based React structure for easy maintenance.
-
----
-
-## 📂 Project Structure
-
-```bash
-tolbert-portfolio/
-├── public/
-│   └── resume.pdf           # Downloadable Resume
-├── src/
-│   ├── components/
-│   │   ├── Hero.jsx         # Intro & Call to Action
-│   │   ├── ProjectList.jsx  # Dynamic Project Grid
-│   │   ├── About.jsx        # Bio, Skills, & Certifications
-│   │   └── Footer.jsx       # Copyright & Links
-│   ├── App.jsx              # Main Assembly
-│   └── main.jsx             # Entry Point & Global Styles
-└── README.md
+Includes a skip link, semantic headings, named navigation, keyboard focus, text-based social links, filter counts and pressed state, live result announcements, native expandable notes, mobile menu state, and reduced-motion support. No external font request is required.

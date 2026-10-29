@@ -1,0 +1,79 @@
+.projects-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.engineering-work .filter-row { flex-wrap: wrap; gap: 9px; }
+.engineering-work .filter { min-height: 42px; font-size: 11px; }
+.engineering-work .project { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 7%; align-items: start; padding-block: 46px; }
+.engineering-work .project-copy { min-width: 0; }
+.engineering-work .project h3 { font-size: clamp(28px, 2.8vw, 39px); line-height: 1.12; overflow-wrap: anywhere; }
+.engineering-work .project-subtitle { font-size: 13px; line-height: 1.65; }
+.engineering-work .project-copy > .project-description { font-size: 14px; line-height: 1.8; }
+.project-section-label { font-size: 10px; text-transform: uppercase; font-weight: 600; letter-spacing: 1.1px; color: var(--muted); margin: 23px 0 10px; }
+.engineering-work .project-highlights { font-size: 13px; line-height: 1.8; margin: 0 0 22px; }
+.engineering-work .project-highlights li { position: relative; padding-left: 19px; margin-bottom: 7px; }
+.engineering-work .project-highlights li::before { position: absolute; left: 0; margin: 0; }
+.project-evaluation { border-left: 2px solid #a53644; padding-left: 15px; margin-block: 23px; }
+.project-evaluation .project-section-label { margin-top: 0; }
+.project-evaluation p, .project-notes p { font-size: 13px; line-height: 1.8; color: var(--muted); }
+.engineering-work .tech-list { gap: 8px 14px; }
+.engineering-work .tech-list span { font-size: 11px; }
+.project-actions { margin-top: 12px; }
+.project-source-note { display: inline-block; font-size: 11px; color: var(--muted); margin-block: 15px 7px; }
+.project-notes { border-top: 1px solid #ccc7bc; margin-top: 20px; padding-top: 15px; }
+.project-notes summary { cursor: pointer; font-size: 12px; font-weight: 600; padding-block: 7px; }
+.project-notes p { padding: 12px 0 2px; }
+.engineering-work .engineering-visual { width: 100%; min-width: 0; min-height: 375px; aspect-ratio: 1.18; padding: 26px; display: grid; grid-template-rows: auto 1fr auto; gap: 24px; }
+.engineering-visual.visual-validation { background: #202c2b; color: #d5dfd3; }
+.engineering-visual.visual-features { background: #ddd5c7; color: #38372f; }
+.engineering-visual.visual-audio { background: #d9e0d5; color: #354d3f; }
+.engineering-visual.visual-market { background: #27232a; color: #d6c3d0; }
+.engineering-visual.visual-pulse { background: #2c3536; color: #d0dfd7; }
+.engineering-visual.visual-commerce { background: #ded3b5; color: #435139; }
+.engineering-visual .visual-category { font-size: 9px; opacity: 1; letter-spacing: 1.6px; line-height: 1.6; }
+.engineering-diagram { display: grid; align-items: center; min-width: 0; }
+.engineering-visual-footer { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 13px; }
+.engineering-visual-footer > span:first-child { font: 25px Georgia, serif; letter-spacing: -.7px; }
+.engineering-visual-footer > span:last-child { font-size: 8px; letter-spacing: 1.2px; white-space: nowrap; }
+.validation-diagram { width: 100%; padding-block: 12px; }
+.diagram-caption { display: flex; justify-content: space-between; gap: 10px; font-size: 8px; letter-spacing: 1px; line-height: 1.7; }
+.validation-fold { display: flex; align-items: center; gap: 12px; margin-top: 18px; }
+.fold-label { font-family: monospace; font-size: 10px; opacity: .7; }
+.validation-cells { display: grid; grid-template-columns: repeat(6, 1fr); flex: 1; gap: 5px; }
+.validation-cells i { height: 25px; background: #37413e; border: 1px solid #5c6962; }
+.validation-cells .is-train, .diagram-key .is-train { background: #9bad9b; border-color: #9bad9b; }
+.validation-cells .is-test, .diagram-key .is-test { background: #dc9199; border-color: #dc9199; }
+.diagram-key { display: flex; flex-wrap: wrap; gap: 12px 19px; margin-top: 24px; font-size: 9px; }
+.diagram-key span { display: flex; align-items: center; gap: 7px; }
+.diagram-key i { display: inline-block; width: 9px; height: 9px; }
+.flow-diagram { width: 100%; max-width: 300px; margin-inline: auto; padding-block: 3px; }
+.flow-stage { display: grid; grid-template-columns: 24px 1fr; align-items: center; gap: 5px 12px; padding: 10px 13px; border: 1px solid currentColor; position: relative; }
+.flow-stage + .flow-stage { margin-top: 19px; }
+.flow-number { grid-row: span 2; font: 10px monospace; opacity: .7; }
+.flow-stage strong { font-size: 10px; font-weight: 500; letter-spacing: 1.4px; }
+.flow-stage > span:last-of-type { font-size: 10px; line-height: 1.5; opacity: .8; }
+.flow-stage > i { position: absolute; bottom: -18px; left: 50%; transform: translateX(-50%); font: normal 14px monospace; }
+.audio-diagram { width: 100%; min-width: 0; padding-block: 10px; }
+.engineering-work .audio-diagram .waveform { height: 130px; gap: 5px; }
+.engineering-work .audio-diagram .waveform i { flex: 1 1 5px; min-width: 0; }
+.audio-diagram .diagram-caption { margin-top: 24px; justify-content: center; text-align: center; }
+@media (max-width: 900px) {
+  .engineering-work .project { gap: 5%; }
+  .engineering-work .engineering-visual { min-height: 350px; padding: 20px; aspect-ratio: auto; }
+  .engineering-visual-footer > span:first-child { font-size: 23px; }
+}
+@media (max-width: 650px) {
+  .engineering-work .project { grid-template-columns: minmax(0, 1fr); gap: 25px; padding-block: 32px; }
+  .engineering-work .engineering-visual { min-height: 330px; aspect-ratio: auto; }
+  .engineering-work .project h3 { font-size: 34px; }
+  .engineering-work .project-subtitle { font-size: 13px; }
+  .engineering-work .project-copy > .project-description { font-size: 14px; }
+  .engineering-work .project-highlights { font-size: 13px; }
+  .engineering-work .tech-list span { font-size: 11px; }
+}
+@media (max-width: 360px) {
+  .engineering-work .filter { padding-inline: 12px; font-size: 10px; }
+  .engineering-work .engineering-visual { min-height: 310px; padding: 17px; }
+  .engineering-work .project h3 { font-size: 30px; }
+  .validation-cells { gap: 4px; }
+  .flow-stage { padding-inline: 9px; column-gap: 8px; }
+}
+
+.engineering-visual.visual-statistics { background: #202c2b; color: #d5dfd3; }

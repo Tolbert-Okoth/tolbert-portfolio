@@ -1,19 +1,6 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-dark text-white py-4 text-center mt-auto">
-      <Container>
-        <p className="mb-0">
-          Built with React & Bootstrap by <strong>Tolbert Okoth Asumba</strong>.
-        </p>
-        <small className="text-white-50">
-          &copy; {new Date().getFullYear()} - Open for Opportunities.
-        </small>
-      </Container>
-    </footer>
+    <footer className="site-footer page-width"><a className="wordmark" href="#home" aria-label="OSUS, back to top">O<span>S</span>U<span>S</span></a><span>© {new Date().getFullYear()} OSUS · Tolbert Okoth Asumba</span><a href="#home">Back to top ↑</a></footer>
   );
-};
-
-export default Footer;
+}
