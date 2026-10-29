@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="hero page-width" id="home" aria-labelledby="hero-title">
       <div className="hero-topline">
         <span className="eyebrow">TOLBERT OKOTH ASUMBA / OSUS</span>
-        <span className="availability"><i /> Open to junior Python & data roles</span>
+        <span className="availability"><i /> Open to work</span>
       </div>
       <h1 id="hero-title">Data into systems.<br /><em>Research into code.</em></h1>
       <div className="hero-bottom">
