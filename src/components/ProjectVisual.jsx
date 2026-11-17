@@ -51,6 +51,14 @@ function Diagram({ type }) {
       return <FlowDiagram steps={[["FEATURES", "Vectorized transforms"], ["INFERENCE", "Cached model"], ["EVALUATION", "Research tooling"]]} />;
     case 'audio':
       return <AudioDiagram />;
+    case 'montecarlo':
+      return <FlowDiagram steps={[["TRADES", "Your list or synthetic"], ["BOOTSTRAP", "Block-resampled paths"], ["RULES", "17 programs, pass/fail/timeout"]]} />;
+    case 'ticks':
+      return <FlowDiagram steps={[["DOWNLOAD", "Resumable + throttled"], ["DECODE", "Verified formats + guards"], ["TEST", "Bars vs ticks"]]} />;
+    case 'profile':
+      return <FlowDiagram steps={[["WINDOW", "Explicit start + as-of"], ["BUILD", "Bars or trade prints"], ["VALIDATE", "Against tick truth"]]} />;
+    case 'variance':
+      return <FlowDiagram steps={[["FEATURES", "Causal trailing variance"], ["FORECAST", "HAR + session factor"], ["SCORE", "Paired QLIKE ledger"]]} />;
     case 'tunza':
       return <FlowDiagram steps={[["LOG", "Check-ins + vitals"], ["CLASSIFY", "Guideline thresholds"], ["ESCALATE", "Alerts + opt-in contact"]]} />;
     case 'market':

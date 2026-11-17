@@ -23,7 +23,7 @@ Deploy `dist/` to a static host. Asset URLs assume deployment at the domain root
 
 ## Content and structure
 
-- `src/data.js`: eight project case studies, four filter categories, experience, skills, and nine certification links.
+- `src/data.js`: twelve project case studies, four filter categories, experience, skills, and nine certification links.
 - `src/App.jsx`: page composition and filter/menu state.
 - `src/components/ProjectList.jsx`: categories, case studies, source links, evaluation notes, and disclosures.
 - `src/components/ProjectVisual.jsx`: explanatory schematics, without simulated performance metrics.
@@ -33,7 +33,7 @@ Deploy `dist/` to a static host. Asset URLs assume deployment at the domain root
 - `public/brand/osus.jpg`: supplied brand artwork.
 - `public/resume.pdf`: downloadable one-page résumé.
 
-The three leading projects cover Hurst/DFA hypothesis testing, walk-forward data/evaluation tooling, and OSUS feature/model inference. Software projects remain supporting examples of APIs, persistence, and data delivery.
+The leading projects are propsim (Monte Carlo simulation), SautiYaAfya (applied audio ML), the Hurst/DFA study, and the dukafetch, vprofile and RV15 research tools. Software projects remain supporting examples of APIs, persistence, and data delivery.
 
 Public-source buttons appear only for verified available repositories. Local OSUS and time-series research are labelled as local work and have engineering notes instead. Research results, model accuracy, runtime gains, and trading performance were not rerun or independently validated. Source-level limitations are stated in each case study. Client details and unprovided dates are omitted.
 
