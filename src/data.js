@@ -1,6 +1,7 @@
 export const projects = [
   {
     "id": "propsim",
+    "visualLabel": "DATA",
     "title": "propsim",
     "subtitle": "Monte Carlo simulation of prop-firm challenges",
     "categoryLabel": "QUANT RESEARCH / SIMULATION",
@@ -81,6 +82,7 @@ export const projects = [
   },
   {
     "id": "dukafetch",
+    "visualLabel": "DATA",
     "title": "dukafetch",
     "subtitle": "Tick-data engineering & backtest bias",
     "categoryLabel": "DATA SYSTEMS / MARKET DATA",
@@ -136,6 +138,7 @@ export const projects = [
   },
   {
     "id": "vprofile",
+    "visualLabel": "ILLUSTRATIVE",
     "title": "vprofile",
     "subtitle": "Look-ahead-free volume profiles, validated",
     "categoryLabel": "QUANT RESEARCH / MARKET MICROSTRUCTURE",
@@ -163,6 +166,7 @@ export const projects = [
   },
   {
     "id": "rv15",
+    "visualLabel": "DATA",
     "title": "RV15 Forecasting Engine",
     "subtitle": "Short-horizon volatility forecasting",
     "categoryLabel": "QUANT RESEARCH / FORECASTING",

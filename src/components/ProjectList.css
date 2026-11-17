@@ -77,3 +77,14 @@
 }
 
 .engineering-visual.visual-statistics { background: #202c2b; color: #d5dfd3; }
+
+/* Data charts for quant tooling projects */
+.engineering-visual.visual-montecarlo { background: #1f2430; color: #d9dde8; --chart-accent: #e48b96; }
+.engineering-visual.visual-ticks { background: #e2dac8; color: #2f2c26; --chart-accent: #a53644; }
+.engineering-visual.visual-profile { background: #d5ddd8; color: #2b3a33; --chart-accent: #a53644; }
+.engineering-visual.visual-variance { background: #2b2624; color: #e6d8d0; --chart-accent: #e0907a; }
+.engineering-diagram:has(.data-chart) { justify-items: stretch; }
+.data-chart { width: 100%; max-width: 440px; height: auto; display: block; margin-inline: auto; overflow: visible; }
+.data-chart .chart-tick { font-size: 7.5px; letter-spacing: 1px; fill: currentColor; opacity: .65; }
+.data-chart .chart-label { font-size: 9px; fill: currentColor; }
+.data-chart .chart-value { font-size: 9px; font-weight: 600; fill: currentColor; font-variant-numeric: tabular-nums; }
