@@ -142,6 +142,40 @@ function QlikeChart() {
   );
 }
 
+const STAMPS = [1,1,1,0,1,1,1, 1,1,1,1,1,0,1, 1,1,1,1,1,1,1, 1,0,1,1,1,1,1];
+const BP_BANDS = [['NORMAL', 80, 130, 0.25], ['HIGH-NORMAL', 130, 140, 0.45], ['GRADE 1', 140, 160, 0.65], ['GRADE 2', 160, 200, 0.85]];
+
+function TunzaChart() {
+  const W = 300, H = 196, cell = 15, gap = 5, gx = 4, gy = 4;
+  const x = v => 4 + ((v - 80) / (210 - 80)) * (W - 8);
+  const kept = STAMPS.filter(Boolean).length;
+  return (
+    <svg className="data-chart" viewBox={`0 0 ${W} ${H}`} role="img">
+      {STAMPS.map((on, i) => {
+        const cx = gx + (i % 7) * (cell + gap), cy = gy + Math.floor(i / 7) * (cell + gap);
+        return on
+          ? <g key={i}><circle cx={cx + cell / 2} cy={cy + cell / 2} r={cell / 2} fill="none" stroke="currentColor" strokeWidth="1.2" /><circle cx={cx + cell / 2} cy={cy + cell / 2} r={cell / 2 - 3.5} fill="currentColor" opacity=".8" /></g>
+          : <rect key={i} x={cx + 1} y={cy + 1} width={cell - 2} height={cell - 2} fill="none" stroke="currentColor" strokeOpacity=".35" strokeDasharray="2 2" />;
+      })}
+      <text x={gx + 7 * (cell + gap) + 8} y={gy + 12} className="chart-label">{kept}/28 days stamped</text>
+      <text x={gx + 7 * (cell + gap) + 8} y={gy + 26} className="chart-tick">{Math.round((kept / 28) * 100)}% · TARGET ≥80%</text>
+      <text x={gx + 7 * (cell + gap) + 8} y={gy + 52} className="chart-tick">5 SILENT DAYS → SELF-PROMPT</text>
+      <text x={gx + 7 * (cell + gap) + 8} y={gy + 64} className="chart-tick">7 → OPT-IN CONTACT</text>
+      <text x="4" y="104" className="chart-tick">SYSTOLIC BANDS · ISH 2020 (mmHg)</text>
+      {BP_BANDS.map(([name, a, b, o]) => (
+        <g key={name}>
+          <rect x={x(a)} y="124" width={x(b) - x(a) - 1.5} height="16" fill="currentColor" opacity={o} />
+          <text x={x(a) + 2} y={name === 'HIGH-NORMAL' ? 119 : 152} className="chart-tick">{name}</text>
+          <text x={x(a)} y="164" className="chart-tick">{a}</text>
+        </g>
+      ))}
+      <rect x={x(200)} y="124" width={x(210) - x(200)} height="16" fill="var(--chart-accent)" />
+      <text x={x(200) - 2} y="164" textAnchor="end" className="chart-tick">200</text>
+      <text x={W - 4} y="186" textAnchor="end" className="chart-label" fill="var(--chart-accent)">≥200 or &lt;80 → emergency alert</text>
+    </svg>
+  );
+}
+
 function Diagram({ type }) {
   switch (type) {
     case 'validation':
@@ -161,7 +195,7 @@ function Diagram({ type }) {
     case 'variance':
       return <QlikeChart />;
     case 'tunza':
-      return <FlowDiagram steps={[["LOG", "Check-ins + vitals"], ["CLASSIFY", "Guideline thresholds"], ["ESCALATE", "Alerts + opt-in contact"]]} />;
+      return <TunzaChart />;
     case 'market':
       return <FlowDiagram steps={[["SOURCES", "External market feeds"], ["FALLBACK", "Provider failover"], ["DELIVERY", "Persistent + live feeds"]]} />;
     case 'pulse':

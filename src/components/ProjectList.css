@@ -88,3 +88,4 @@
 .data-chart .chart-tick { font-size: 7.5px; letter-spacing: 1px; fill: currentColor; opacity: .65; }
 .data-chart .chart-label { font-size: 9px; fill: currentColor; }
 .data-chart .chart-value { font-size: 9px; font-weight: 600; fill: currentColor; font-variant-numeric: tabular-nums; }
+.engineering-visual.visual-tunza { background: #e9e0cd; color: #3d3a2f; --chart-accent: #a53644; }

@@ -111,6 +111,7 @@ export const projects = [
   },
   {
     "id": "tunzacare",
+    "visualLabel": "GUIDELINES",
     "title": "TunzaCare",
     "subtitle": "Guideline-traced clinical logic & safety tests",
     "categoryLabel": "HEALTH-TECH / CLINICAL SOFTWARE",
