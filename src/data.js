@@ -250,7 +250,7 @@ export const projects = [
   {
     "id": "afya",
     "title": "Afya-Pulse",
-    "subtitle": "Database-backed queues & service integration",
+    "subtitle": "Database-backed queues & service integration · 2025",
     "categoryLabel": "DATA SYSTEMS / APPLICATION WORKFLOWS",
     "categories": [
       "Data systems"
@@ -278,7 +278,7 @@ export const projects = [
   {
     "id": "ghoul",
     "title": "Ghoul System",
-    "subtitle": "Market-data integration & service fallbacks",
+    "subtitle": "Market-data integration & service fallbacks · 2025",
     "categoryLabel": "DATA SYSTEMS / MARKET INTELLIGENCE",
     "categories": [
       "Data systems"
@@ -306,7 +306,7 @@ export const projects = [
   {
     "id": "farmconnect",
     "title": "FarmConnect",
-    "subtitle": "Relational workflows & payment callbacks",
+    "subtitle": "Relational workflows & payment callbacks · 2025",
     "categoryLabel": "SUPPORTING SOFTWARE / COMMERCE",
     "categories": [
       "Data systems"
