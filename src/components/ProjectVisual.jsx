@@ -51,6 +51,8 @@ function Diagram({ type }) {
       return <FlowDiagram steps={[["FEATURES", "Vectorized transforms"], ["INFERENCE", "Cached model"], ["EVALUATION", "Research tooling"]]} />;
     case 'audio':
       return <AudioDiagram />;
+    case 'tunza':
+      return <FlowDiagram steps={[["LOG", "Check-ins + vitals"], ["CLASSIFY", "Guideline thresholds"], ["ESCALATE", "Alerts + opt-in contact"]]} />;
     case 'market':
       return <FlowDiagram steps={[["SOURCES", "External market feeds"], ["FALLBACK", "Provider failover"], ["DELIVERY", "Persistent + live feeds"]]} />;
     case 'pulse':

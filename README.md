@@ -23,7 +23,7 @@ Deploy `dist/` to a static host. Asset URLs assume deployment at the domain root
 
 ## Content and structure
 
-- `src/data.js`: seven project case studies, four filter categories, experience, skills, and nine certification links.
+- `src/data.js`: eight project case studies, four filter categories, experience, skills, and nine certification links.
 - `src/App.jsx`: page composition and filter/menu state.
 - `src/components/ProjectList.jsx`: categories, case studies, source links, evaluation notes, and disclosures.
 - `src/components/ProjectVisual.jsx`: explanatory schematics, without simulated performance metrics.
@@ -31,7 +31,7 @@ Deploy `dist/` to a static host. Asset URLs assume deployment at the domain root
 - `src/components/Experience.jsx`: independent research, engineering projects, and confirmed freelance work, labelled separately.
 - `src/App.css` and `src/index.css`: brand styling, responsive layout, focus states, and reduced-motion support.
 - `public/brand/osus.jpg`: supplied brand artwork.
-- `public/resume.pdf`: existing downloadable résumé; not rewritten during the portfolio repositioning.
+- `public/resume.pdf`: downloadable one-page résumé.
 
 The three leading projects cover Hurst/DFA hypothesis testing, walk-forward data/evaluation tooling, and OSUS feature/model inference. Software projects remain supporting examples of APIs, persistence, and data delivery.
 

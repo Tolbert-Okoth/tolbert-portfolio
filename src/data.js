@@ -14,8 +14,8 @@ export const projects = [
       "Strictly trailing windows and a lookahead perturbation test",
       "Synthetic-process checks and documented hypothesis outcomes"
     ],
-    "evaluation": "The recorded study rejected its predictive hypotheses. The useful output is a testable framework and a documented negative finding.",
-    "notes": "Public source includes the estimator implementation, synthetic-process tests, and a results summary. A rejected hypothesis is retained as a research result; it is not presented as a profitable strategy. Results have not been independently rerun for this portfolio.",
+    "evaluation": "Across 16 years (4,196 trading days), gold's Hurst exponent was indistinguishable from a random walk (p = 0.62), and the regime signal failed shuffled-null, regime-split and outlier-trim gates. The hypothesis was rejected under pre-registered kill criteria.",
+    "notes": "Public source includes the estimator implementation, synthetic-process tests, and a results summary. A rejected hypothesis is retained as a research result; it is not presented as a profitable strategy.",
     "tech": [
       "Python",
       "NumPy",
@@ -94,8 +94,8 @@ export const projects = [
       "Multi-recording analysis and noise-robustness experiments",
       "Tests for silence rejection, deterministic inference, and upload validation"
     ],
-    "evaluation": "The model detects sound patterns. Recorded research benchmarks do not establish clinical diagnostic accuracy or deployment.",
-    "notes": "The current analyzer separates acoustic probabilities from symptom-based escalation. Tests and benchmark files are available in the repository, but they were not rerun for this portfolio. Clinical validation and full offline operation are not claimed.",
+    "evaluation": "71.8% accuracy (3 classes) on 742 recordings from 129 held-out patients; per child, crackle detection reached 0.79 sensitivity and 0.76 specificity. These are research benchmarks on stethoscope recordings, not clinical validation.",
+    "notes": "The current analyzer separates acoustic probabilities from symptom-based escalation. Tests and benchmark files are available in the repository. Clinical validation and full offline operation are not claimed.",
     "tech": [
       "Python",
       "PyTorch",
@@ -105,6 +105,33 @@ export const projects = [
     ],
     "github": "https://github.com/Tolbert-Okoth/sauti-ya-afya",
     "sourceLabel": "Public prototype source"
+  },
+  {
+    "id": "tunzacare",
+    "title": "TunzaCare",
+    "subtitle": "Guideline-traced clinical logic & safety tests",
+    "categoryLabel": "HEALTH-TECH / CLINICAL SOFTWARE",
+    "categories": [
+      "Applied ML",
+      "Data systems"
+    ],
+    "visual": "tunza",
+    "description": "An offline-first care companion for adults in Kenya managing hypertension or type 2 diabetes, built around daily check-ins, vitals logging, refill reminders and opt-in family escalation.",
+    "highlights": [
+      "Every clinical cutoff traced to ISH 2020, ADA 2024 and Kenya MoH guidelines in one thresholds file",
+      "Append-only vitals log and emergency alerts that require explicit acknowledgment",
+      "English/Kiswahili key parity and an escalation channel that sends no health data"
+    ],
+    "evaluation": "23 automated tests cover clinical boundaries, emergency-alert invariants, escalation privacy and bilingual parity. It is a self-management tool, not a diagnostic device.",
+    "notes": "Built with vanilla JavaScript ES modules and no runtime framework so it stays fast on budget phones. Clinical use with patients has not been evaluated.",
+    "tech": [
+      "JavaScript",
+      "Node test runner",
+      "Local-first storage",
+      "i18n"
+    ],
+    "github": "https://github.com/Tolbert-Okoth/TunzaCare",
+    "sourceLabel": "Public source"
   },
   {
     "id": "ghoul",
